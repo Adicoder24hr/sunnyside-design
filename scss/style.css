@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:wght@600;800&family=Inter:wght@400;600;700&family=Oswald:wght@700&family=Playfair+Display&family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:wght@600;800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@400;600;700&family=Oswald:wght@700&family=Playfair+Display&family=Roboto+Slab:wght@300&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+}
+
+body {
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+}
+body header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 30px;
+  position: absolute;
+  inset: 0;
+  z-index: 99;
+}
+body header .logo {
+  width: 200px;
+  height: 100px;
+}
+body header .logo h2 {
+  font-weight: 800;
+  font-family: "Barlow", sans-serif;
+  color: white;
+}
+body header nav {
+  display: flex;
+  gap: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  height: 50px;
+  font-size: 15px;
+}
+body header nav a {
+  text-decoration: none;
+  color: white;
+  height: 40px;
+  padding: 12px 22px;
+  font-family: "Fraunces", serif;
+}
+body header nav a:nth-of-type(4) {
+  background-color: white;
+  border-radius: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  transition: background-color 100ms ease-in-out;
+}
+body header nav a:nth-of-type(4):hover {
+  background-color: #3EBFFF;
+  color: white;
+  transition: background-color 200ms ease-in-out;
+}
+body main {
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+}
+body main .hero-section {
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .hero-section .hero {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 700px;
+  position: relative;
+  bottom: 20px;
+}
+body main .hero-section .hero h2 {
+  position: relative;
+  bottom: 70px;
+  color: hsl(0, 0%, 100%);
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+}
+body main .hero-section .hero img {
+  height: 100px;
+  width: 30px;
+}
+body main .info {
+  max-width: 100vw;
+  width: 100%;
+  /* height: 100vh; */
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100fr 100fr 100fr;
+}
+body main .info .one, body main .info .four {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+body main .info .one .box-heading, body main .info .four .box-heading {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 900;
+  align-self: flex-start;
+  padding-left: 20%;
+}
+body main .info .one .para, body main .info .four .para {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #8A8A9A;
+  line-height: 1.8rem;
+}
+body main .info .one .more-info, body main .info .four .more-info {
+  text-decoration: none;
+  color: black;
+  align-self: flex-start;
+  padding-left: 22%;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 15px;
+  position: relative;
+  z-index: 99;
+}
+body main .info .one .underline, body main .info .four .underline {
+  width: 125px;
+  height: 10px;
+  box-shadow: 0px 9px 0px hsl(51, 100%, 90%) inset;
+  position: relative;
+  left: -21%;
+  bottom: 37px;
+  z-index: 20;
+  border-radius: 20px 20px 20px 20px;
+}
+body main .info .two {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+}
+body main .info .two img {
+  height: 100%;
+  width: 100%;
+}
+body main .info .three {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+}
+body main .info .three img {
+  height: 100%;
+  width: 100%;
+}
+body main .info .four {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+body main .info .four .underline {
+  box-shadow: 0px 9px 0px hsl(7, 99%, 90%) inset;
+}
+body main .info .five, body main .info .six {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 280px;
+  background-image: url(../images/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 30px;
+}
+body main .info .five .five-heading, body main .info .six .five-heading {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: hsl(167, 40%, 24%);
+}
+body main .info .five .five-para, body main .info .six .five-para {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  color: #49887B;
+  line-height: 1.8rem;
+}
+body main .info .six {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-image: url(../images/desktop/image-photography.jpg);
+}
+body main .info .six .five-heading {
+  color: rgba(19, 55, 95, 0.9098039216);
+}
+body main .info .six .five-para {
+  color: hsl(198, 62%, 26%);
+}
+body main .client {
+  max-width: 100vw;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+body main .client .client-heading h2 {
+  letter-spacing: 5px;
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #B9B7B7;
+}
+body main .client .client-profile {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  width: 100%;
+  padding-left: 1vh;
+}
+body main .client .client-profile .client-one, body main .client .client-profile .client-two, body main .client .client-profile .client-three {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+body main .client .client-profile .client-one .client-image, body main .client .client-profile .client-two .client-image, body main .client .client-profile .client-three .client-image {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body main .client .client-profile .client-one .client-image img, body main .client .client-profile .client-two .client-image img, body main .client .client-profile .client-three .client-image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+}
+body main .client .client-profile .client-one .client-info, body main .client .client-profile .client-two .client-info, body main .client .client-profile .client-three .client-info {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body main .client .client-profile .client-one .client-info .info-para, body main .client .client-profile .client-two .client-info .info-para, body main .client .client-profile .client-three .client-info .info-para {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.9rem;
+  color: #6D6D6F;
+}
+body main .client .client-profile .client-one .client-id, body main .client .client-profile .client-two .client-id, body main .client .client-profile .client-three .client-id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .client .client-profile .client-one .client-id .name, body main .client .client-profile .client-two .client-id .name, body main .client .client-profile .client-three .client-id .name {
+  font-size: 18px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+body main .client .client-profile .client-one .client-id .post, body main .client .client-profile .client-two .client-id .post, body main .client .client-profile .client-three .client-id .post {
+  font-size: 15px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  color: #B9B7B7;
+}/*# sourceMappingURL=style.css.map */
