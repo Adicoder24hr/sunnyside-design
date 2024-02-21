@@ -313,6 +313,7 @@ body{
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        gap: 15px;
                         .name{
                             font-size: 18px;
                             font-family: $Fraunces;
@@ -327,6 +328,65 @@ body{
                         }
                     }
                 }
+            }
+        }
+        .product{
+            width: 100%;
+            max-width: 100vw;
+            display: flex;
+
+            .box{
+                width: 500px;
+                height: 500px;
+
+                img{
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .footer{
+            max-width: 100vw;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            padding: 80px;
+            background-color: #90D4C5;
+
+            .sunnyside{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+
+                h2{
+                    font-size: 35px;
+                    font-family: $Barlow;
+                    font-weight: 900;
+                    color: #2E7567;
+                }
+
+                .brand-nav{
+                    display: flex;
+                    gap: 60px;
+
+                    a{
+                        text-decoration: none;
+                        color: $moderateCyan;
+                        font-family: $Barlow;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .socials{
+                display: flex;
+                gap: 30px;
             }
         }
     }
